@@ -32,7 +32,7 @@ class PostsController extends Controller
             }
         } catch (\Exception $e) {
             return response()->json([
-                'message' => $e->getMessage()
+                'message' => 'an exceptional error occured'
             ], 400);
         } catch (\Error $e) {
             return response()->json([
